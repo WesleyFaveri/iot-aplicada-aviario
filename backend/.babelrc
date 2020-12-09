@@ -1,0 +1,16 @@
+{
+  "passPerPreset": true,
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "extensions": [".js", ".json"],
+      "cwd": "babelrc",
+      "alias": {
+        "@db": "./src/db",
+      }
+    }]
+  ],
+}
